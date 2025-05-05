@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { book, play, file-text } from 'lucide-react';
+import { Book, Play, FileText } from 'lucide-react';
 import NavBar from '@/components/NavBar';
 
 const Index = () => {
@@ -51,7 +51,7 @@ const Index = () => {
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <book className="h-8 w-8 text-scienceco-blue" />
+                  <Book className="h-8 w-8 text-scienceco-blue" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Cours</h3>
                 <p className="text-gray-600 mb-4">
@@ -66,7 +66,7 @@ const Index = () => {
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <play className="h-8 w-8 text-scienceco-blue" />
+                  <Play className="h-8 w-8 text-scienceco-blue" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Vidéo Cours</h3>
                 <p className="text-gray-600 mb-4">
@@ -81,7 +81,7 @@ const Index = () => {
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <file-text className="h-8 w-8 text-scienceco-blue" />
+                  <FileText className="h-8 w-8 text-scienceco-blue" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Exercices</h3>
                 <p className="text-gray-600 mb-4">

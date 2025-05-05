@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { file-text } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 export interface ExerciseProps {
   title: string;
@@ -47,7 +47,7 @@ const ExerciseCard: React.FC<ExerciseProps> = ({
             <span className="text-xs text-gray-600">🏅 {pointsAvailable} points</span>
           </div>
           <Button size="sm" className="bg-scienceco-blue hover:bg-scienceco-darkblue">
-            <file-text className="h-4 w-4 mr-1" />
+            <FileText className="h-4 w-4 mr-1" />
             Commencer
           </Button>
         </div>

@@ -21,12 +21,12 @@ const CourseCard: React.FC<CourseProps> = ({
 }) => {
   return (
     <Card className="jeton-card-hover border overflow-hidden group">
-      {/* Barre de couleur en haut inspirée de jeton.com */}
-      <div className="h-1 w-full bg-gradient-to-r from-scienceco-blue to-scienceco-purple"></div>
+      {/* Barre de couleur en haut avec le nouveau dégradé orange-rouge */}
+      <div className="h-1 w-full bg-gradient-to-r from-scienceco-orange to-scienceco-red"></div>
       
       <CardHeader className="pb-3 pt-5 px-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="badge-primary">
+          <span className="badge-orange-red">
             {category}
           </span>
           <span className="text-xs font-medium text-scienceco-darkgray flex items-center">
@@ -37,7 +37,7 @@ const CourseCard: React.FC<CourseProps> = ({
             {duration}
           </span>
         </div>
-        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-scienceco-blue transition-colors">{title}</h3>
+        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-scienceco-orange transition-colors">{title}</h3>
       </CardHeader>
       
       <CardContent className="pt-2 px-6">
@@ -51,7 +51,7 @@ const CourseCard: React.FC<CourseProps> = ({
             'bg-red-100 text-red-800'}`}>
           {level}
         </span>
-        <Button size="sm" variant="ghost" className="text-scienceco-blue hover:text-scienceco-darkblue hover:bg-scienceco-blue/10 group">
+        <Button size="sm" variant="ghost" className="text-scienceco-orange hover:text-scienceco-red hover:bg-scienceco-orange/10 group">
           <Book className="h-4 w-4 mr-1 transition-all group-hover:scale-110" />
           Commencer
         </Button>

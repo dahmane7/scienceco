@@ -93,8 +93,18 @@
     @apply bg-gradient-to-r from-scienceco-blue to-scienceco-purple;
   }
   
+  /* Nouveau dégradé orange-rouge */
+  .gradient-orange-red {
+    @apply bg-gradient-to-r from-scienceco-orange to-scienceco-red;
+  }
+  
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-scienceco-blue to-scienceco-purple;
+  }
+  
+  /* Nouveau texte dégradé orange-rouge */
+  .gradient-text-orange-red {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-scienceco-orange to-scienceco-red;
   }
   
   .glass-card {
@@ -109,20 +119,49 @@
     @apply transition-all duration-300 hover:shadow-xl hover:border-scienceco-blue/20 hover:-translate-y-1;
   }
   
+  /* Nouvelle version avec dégradé orange-rouge */
+  .jeton-card-orange-red {
+    @apply rounded-lg border-none shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .jeton-card-hover-orange-red {
+    @apply transition-all duration-300 hover:shadow-xl hover:border-scienceco-orange/20 hover:-translate-y-1;
+  }
+  
   .jeton-button {
     @apply bg-scienceco-blue hover:bg-scienceco-darkblue text-white rounded-full px-6 py-2.5 font-medium transition-all;
+  }
+  
+  /* Nouveau bouton orange-rouge */
+  .jeton-button-orange-red {
+    @apply bg-scienceco-orange hover:bg-scienceco-red text-white rounded-full px-6 py-2.5 font-medium transition-all;
   }
   
   .jeton-button-outline {
     @apply border border-scienceco-blue text-scienceco-blue hover:bg-scienceco-blue/5 rounded-full px-6 py-2.5 font-medium transition-all;
   }
   
+  /* Nouveau bouton outline orange-rouge */
+  .jeton-button-outline-orange-red {
+    @apply border border-scienceco-orange text-scienceco-orange hover:bg-scienceco-orange/5 rounded-full px-6 py-2.5 font-medium transition-all;
+  }
+  
   .nav-item-active {
     @apply text-scienceco-blue border-b-2 border-scienceco-blue;
   }
   
+  /* Nouvelle version nav active orange-rouge */
+  .nav-item-active-orange-red {
+    @apply text-scienceco-orange border-b-2 border-scienceco-orange;
+  }
+  
   .feature-icon-container {
     @apply w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:bg-scienceco-blue/20;
+  }
+  
+  /* Nouveau container d'icône orange-rouge */
+  .feature-icon-container-orange-red {
+    @apply w-16 h-16 rounded-full bg-scienceco-orange/10 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:bg-scienceco-orange/20;
   }
   
   .badge-jeton {
@@ -131,6 +170,11 @@
   
   .badge-primary {
     @apply badge-jeton bg-scienceco-blue/10 text-scienceco-blue;
+  }
+  
+  /* Nouveau badge orange-rouge */
+  .badge-orange-red {
+    @apply badge-jeton bg-scienceco-orange/10 text-scienceco-orange;
   }
   
   .badge-yellow {
@@ -143,7 +187,17 @@
     @apply relative rounded-lg p-[1px] overflow-hidden before:absolute before:inset-0 before:rounded-lg before:p-1 before:bg-gradient-to-r before:from-scienceco-blue before:to-scienceco-purple;
   }
   
+  /* Nouveau border gradient orange-rouge */
+  .jeton-gradient-border-orange-red {
+    @apply relative rounded-lg p-[1px] overflow-hidden before:absolute before:inset-0 before:rounded-lg before:p-1 before:bg-gradient-to-r before:from-scienceco-orange before:to-scienceco-red;
+  }
+  
   .jeton-hover-shadow {
     @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,123,252,0.12)];
+  }
+  
+  /* Nouveau hover shadow orange-rouge */
+  .jeton-hover-shadow-orange-red {
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgb(249,115,22,0.12)];
   }
 }

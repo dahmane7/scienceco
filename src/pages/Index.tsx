@@ -11,22 +11,22 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
-      {/* Hero Section */}
-      <section className="bg-white">
+      {/* Hero Section avec le nouveau dégradé orange-rouge */}
+      <section className="gradient-orange-red text-white">
         <div className="section-container py-16 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
-              <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-                Apprenez les sciences <span className="text-scienceco-blue">simplement</span>
+              <h1 className="text-4xl font-bold text-white sm:text-5xl">
+                Apprenez les sciences <span className="text-yellow-300">simplement</span>
               </h1>
-              <p className="text-lg text-gray-600 max-w-lg">
+              <p className="text-lg text-gray-100 max-w-lg">
                 Découvrez notre plateforme d'apprentissage qui vous permet d'apprendre à votre rythme avec des cours, des vidéos et des exercices interactifs.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-scienceco-blue hover:bg-scienceco-darkblue">
+                <Button asChild size="lg" className="bg-white text-scienceco-red hover:bg-gray-100">
                   <Link to="/cours">Découvrir les cours</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
                   <Link to="/exercices">Essayer un exercice</Link>
                 </Button>
               </div>
@@ -42,22 +42,22 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section avec des cartes utilisant le nouveau style orange-rouge */}
       <section className="bg-gray-50 py-16">
         <div className="section-container">
-          <h2 className="section-title text-center">Notre plateforme d'apprentissage</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center text-scienceco-red">Notre plateforme d'apprentissage</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <Book className="h-8 w-8 text-scienceco-blue" />
+                <div className="w-16 h-16 rounded-full bg-scienceco-orange/10 flex items-center justify-center mb-4">
+                  <Book className="h-8 w-8 text-scienceco-orange" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Cours</h3>
                 <p className="text-gray-600 mb-4">
                   Accédez à des cours détaillés avec des explications claires et des exemples pratiques.
                 </p>
-                <Button asChild variant="ghost" className="mt-auto">
+                <Button asChild variant="ghost" className="mt-auto text-scienceco-orange hover:text-scienceco-red">
                   <Link to="/cours">Voir les cours</Link>
                 </Button>
               </CardContent>
@@ -65,14 +65,14 @@ const Index = () => {
 
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <Play className="h-8 w-8 text-scienceco-blue" />
+                <div className="w-16 h-16 rounded-full bg-scienceco-orange/10 flex items-center justify-center mb-4">
+                  <Play className="h-8 w-8 text-scienceco-orange" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Vidéo Cours</h3>
                 <p className="text-gray-600 mb-4">
                   Regardez des explications visuelles et des démonstrations pour mieux comprendre les concepts.
                 </p>
-                <Button asChild variant="ghost" className="mt-auto">
+                <Button asChild variant="ghost" className="mt-auto text-scienceco-orange hover:text-scienceco-red">
                   <Link to="/video-cours">Voir les vidéos</Link>
                 </Button>
               </CardContent>
@@ -80,14 +80,14 @@ const Index = () => {
 
             <Card className="card-hover">
               <CardContent className="pt-6 flex flex-col items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4">
-                  <FileText className="h-8 w-8 text-scienceco-blue" />
+                <div className="w-16 h-16 rounded-full bg-scienceco-orange/10 flex items-center justify-center mb-4">
+                  <FileText className="h-8 w-8 text-scienceco-orange" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Exercices</h3>
                 <p className="text-gray-600 mb-4">
                   Pratiquez avec des exercices interactifs pour tester et renforcer vos connaissances.
                 </p>
-                <Button asChild variant="ghost" className="mt-auto">
+                <Button asChild variant="ghost" className="mt-auto text-scienceco-orange hover:text-scienceco-red">
                   <Link to="/exercices">Voir les exercices</Link>
                 </Button>
               </CardContent>
@@ -97,10 +97,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white py-8 mt-auto">
+      <footer className="bg-scienceco-red text-white py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="border-t pt-8">
-            <p className="text-center text-gray-500 text-sm">
+          <div className="border-t border-white/20 pt-8">
+            <p className="text-center text-gray-200 text-sm">
               &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
             </p>
           </div>

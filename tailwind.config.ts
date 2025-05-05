@@ -59,7 +59,9 @@ export default {
 					purple: '#6246EA',    // Utilisé pour certains éléments sur jeton.com
 					yellow: '#FFCB45',    // Couleur d'accent sur jeton.com
 					gray: '#F3F4F6',
-					darkgray: '#4B5563'
+					darkgray: '#4B5563',
+					orange: '#F97316',    // Nouvelle couleur orange
+					red: '#ea384c',       // Nouvelle couleur rouge
 				}
 			},
 			borderRadius: {

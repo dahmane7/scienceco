@@ -20,28 +20,39 @@ const CourseCard: React.FC<CourseProps> = ({
   duration,
 }) => {
   return (
-    <Card className="card-hover overflow-hidden">
-      <CardHeader className="pb-3 pt-5 px-6 bg-gradient-to-r from-scienceco-blue/10 to-transparent">
+    <Card className="jeton-card-hover border overflow-hidden group">
+      {/* Barre de couleur en haut inspirée de jeton.com */}
+      <div className="h-1 w-full bg-gradient-to-r from-scienceco-blue to-scienceco-purple"></div>
+      
+      <CardHeader className="pb-3 pt-5 px-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-medium px-2 py-1 rounded-full bg-scienceco-gray text-scienceco-darkgray">
+          <span className="badge-primary">
             {category}
           </span>
-          <span className="text-xs font-medium text-scienceco-darkgray">{duration}</span>
+          <span className="text-xs font-medium text-scienceco-darkgray flex items-center">
+            <svg className="w-4 h-4 mr-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8V12L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2"/>
+            </svg>
+            {duration}
+          </span>
         </div>
-        <h3 className="text-lg font-semibold text-scienceco-darkblue">{title}</h3>
+        <h3 className="text-lg font-semibold text-gray-800 group-hover:text-scienceco-blue transition-colors">{title}</h3>
       </CardHeader>
-      <CardContent className="pt-4 px-6">
+      
+      <CardContent className="pt-2 px-6">
         <p className="text-sm text-gray-600 line-clamp-3">{description}</p>
       </CardContent>
+      
       <CardFooter className="flex items-center justify-between pt-2 pb-5 px-6">
-        <span className={`text-xs font-medium px-2 py-1 rounded-full 
+        <span className={`badge-jeton
           ${level === 'Débutant' ? 'bg-green-100 text-green-800' : 
-            level === 'Intermédiaire' ? 'bg-yellow-100 text-yellow-800' : 
+            level === 'Intermédiaire' ? 'bg-amber-100 text-amber-800' : 
             'bg-red-100 text-red-800'}`}>
           {level}
         </span>
-        <Button size="sm" variant="ghost" className="text-scienceco-blue hover:text-scienceco-darkblue group">
-          <Book className="h-4 w-4 mr-1 group-hover:animate-fade-in" />
+        <Button size="sm" variant="ghost" className="text-scienceco-blue hover:text-scienceco-darkblue hover:bg-scienceco-blue/10 group">
+          <Book className="h-4 w-4 mr-1 transition-all group-hover:scale-110" />
           Commencer
         </Button>
       </CardFooter>

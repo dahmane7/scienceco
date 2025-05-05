@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 215 100% 50%;
+    --primary: 212 100% 49%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -85,23 +85,65 @@
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:bg-gray-50;
   }
 
   /* Styles inspirés de jeton.com */
   .gradient-bg {
-    @apply bg-gradient-to-r from-scienceco-blue to-scienceco-darkblue;
+    @apply bg-gradient-to-r from-scienceco-blue to-scienceco-purple;
+  }
+  
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-scienceco-blue to-scienceco-purple;
   }
   
   .glass-card {
-    @apply backdrop-blur-sm bg-white/80 border border-gray-100 shadow-md;
+    @apply backdrop-blur-sm bg-white/90 border border-gray-100 shadow-md;
+  }
+  
+  .jeton-card {
+    @apply rounded-lg border-none shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .jeton-card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:border-scienceco-blue/20 hover:-translate-y-1;
+  }
+  
+  .jeton-button {
+    @apply bg-scienceco-blue hover:bg-scienceco-darkblue text-white rounded-full px-6 py-2.5 font-medium transition-all;
+  }
+  
+  .jeton-button-outline {
+    @apply border border-scienceco-blue text-scienceco-blue hover:bg-scienceco-blue/5 rounded-full px-6 py-2.5 font-medium transition-all;
   }
   
   .nav-item-active {
     @apply text-scienceco-blue border-b-2 border-scienceco-blue;
   }
   
-  .btn-primary {
-    @apply bg-scienceco-blue text-white hover:bg-scienceco-darkblue transition-colors;
+  .feature-icon-container {
+    @apply w-16 h-16 rounded-full bg-scienceco-blue/10 flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:bg-scienceco-blue/20;
+  }
+  
+  .badge-jeton {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .badge-primary {
+    @apply badge-jeton bg-scienceco-blue/10 text-scienceco-blue;
+  }
+  
+  .badge-yellow {
+    @apply badge-jeton bg-scienceco-yellow/10 text-amber-700;
+  }
+}
+
+@layer components {
+  .jeton-gradient-border {
+    @apply relative rounded-lg p-[1px] overflow-hidden before:absolute before:inset-0 before:rounded-lg before:p-1 before:bg-gradient-to-r before:from-scienceco-blue before:to-scienceco-purple;
+  }
+  
+  .jeton-hover-shadow {
+    @apply transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,123,252,0.12)];
   }
 }

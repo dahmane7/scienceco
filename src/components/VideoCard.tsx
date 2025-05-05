@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { play } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 export interface VideoProps {
   title: string;
@@ -33,7 +33,7 @@ const VideoCard: React.FC<VideoProps> = ({
             variant="secondary" 
             className="rounded-full w-12 h-12 bg-white/80 hover:bg-white shadow-md transform transition-transform hover:scale-110"
           >
-            <play className="h-6 w-6 text-scienceco-blue" />
+            <Play className="h-6 w-6 text-scienceco-blue" />
           </Button>
         </div>
         <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/70 text-white text-xs rounded">

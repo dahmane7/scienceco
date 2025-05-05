@@ -87,4 +87,21 @@
   .card-hover {
     @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
+
+  /* Styles inspirés de jeton.com */
+  .gradient-bg {
+    @apply bg-gradient-to-r from-scienceco-blue to-scienceco-darkblue;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/80 border border-gray-100 shadow-md;
+  }
+  
+  .nav-item-active {
+    @apply text-scienceco-blue border-b-2 border-scienceco-blue;
+  }
+  
+  .btn-primary {
+    @apply bg-scienceco-blue text-white hover:bg-scienceco-darkblue transition-colors;
+  }
 }

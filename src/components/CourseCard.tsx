@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { book } from 'lucide-react';
+import { Book } from 'lucide-react';
 
 export interface CourseProps {
   title: string;
@@ -41,7 +41,7 @@ const CourseCard: React.FC<CourseProps> = ({
           {level}
         </span>
         <Button size="sm" variant="ghost" className="text-scienceco-blue hover:text-scienceco-darkblue group">
-          <book className="h-4 w-4 mr-1 group-hover:animate-fade-in" />
+          <Book className="h-4 w-4 mr-1 group-hover:animate-fade-in" />
           Commencer
         </Button>
       </CardFooter>

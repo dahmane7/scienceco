@@ -35,7 +35,7 @@ const ExerciseCard: React.FC<ExerciseProps> = ({
             {difficulty}
           </span>
         </div>
-        <h3 className="text-lg font-semibold text-scienceco-darkblue">{title}</h3>
+        <h3 className="text-lg font-semibold text-scienceco-red">{title}</h3>
       </CardHeader>
       <CardContent className="py-1 px-6">
         <p className="text-sm text-gray-600">{description}</p>
@@ -46,7 +46,7 @@ const ExerciseCard: React.FC<ExerciseProps> = ({
             <span className="text-xs text-gray-600">⏱️ {estimatedTime}</span>
             <span className="text-xs text-gray-600">🏅 {pointsAvailable} points</span>
           </div>
-          <Button size="sm" className="bg-scienceco-blue hover:bg-scienceco-darkblue">
+          <Button size="sm" className="bg-scienceco-orange hover:bg-scienceco-red">
             <FileText className="h-4 w-4 mr-1" />
             Commencer
           </Button>

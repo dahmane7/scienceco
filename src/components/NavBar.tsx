@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="text-scienceco-blue text-2xl font-bold">
+              <Link to="/" className="text-scienceco-orange text-2xl font-bold">
                 Science Co
               </Link>
             </div>
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
                 to="/"
                 className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
                   isActive('/')
-                    ? 'border-scienceco-blue text-gray-900'
+                    ? 'border-scienceco-orange text-gray-900'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
                 }`}
               >
@@ -34,7 +34,7 @@ const NavBar: React.FC = () => {
                 to="/cours"
                 className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
                   isActive('/cours')
-                    ? 'border-scienceco-blue text-gray-900'
+                    ? 'border-scienceco-orange text-gray-900'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
                 }`}
               >
@@ -44,7 +44,7 @@ const NavBar: React.FC = () => {
                 to="/video-cours"
                 className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
                   isActive('/video-cours')
-                    ? 'border-scienceco-blue text-gray-900'
+                    ? 'border-scienceco-orange text-gray-900'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
                 }`}
               >
@@ -54,7 +54,7 @@ const NavBar: React.FC = () => {
                 to="/exercices"
                 className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
                   isActive('/exercices')
-                    ? 'border-scienceco-blue text-gray-900'
+                    ? 'border-scienceco-orange text-gray-900'
                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
                 }`}
               >
@@ -65,7 +65,7 @@ const NavBar: React.FC = () => {
           <div className="-mr-2 flex items-center sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-scienceco-blue"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-scienceco-orange"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -96,7 +96,7 @@ const NavBar: React.FC = () => {
             to="/"
             className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
               isActive('/')
-                ? 'bg-scienceco-gray border-scienceco-blue text-scienceco-darkblue'
+                ? 'bg-scienceco-gray border-scienceco-orange text-scienceco-darkgray'
                 : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
             }`}
           >
@@ -106,7 +106,7 @@ const NavBar: React.FC = () => {
             to="/cours"
             className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
               isActive('/cours')
-                ? 'bg-scienceco-gray border-scienceco-blue text-scienceco-darkblue'
+                ? 'bg-scienceco-gray border-scienceco-orange text-scienceco-darkgray'
                 : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
             }`}
           >
@@ -116,7 +116,7 @@ const NavBar: React.FC = () => {
             to="/video-cours"
             className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
               isActive('/video-cours')
-                ? 'bg-scienceco-gray border-scienceco-blue text-scienceco-darkblue'
+                ? 'bg-scienceco-gray border-scienceco-orange text-scienceco-darkgray'
                 : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
             }`}
           >
@@ -126,7 +126,7 @@ const NavBar: React.FC = () => {
             to="/exercices"
             className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium ${
               isActive('/exercices')
-                ? 'bg-scienceco-gray border-scienceco-blue text-scienceco-darkblue'
+                ? 'bg-scienceco-gray border-scienceco-orange text-scienceco-darkgray'
                 : 'border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'
             }`}
           >

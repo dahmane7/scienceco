@@ -57,9 +57,15 @@ const Cours = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
+      {/* Header avec gradient orange-rouge */}
+      <div className="gradient-orange-red text-white py-12">
+        <div className="section-container">
+          <h1 className="text-4xl font-bold">Cours</h1>
+          <p className="mt-4 max-w-2xl">Découvrez nos cours pour approfondir vos connaissances</p>
+        </div>
+      </div>
+      
       <div className="section-container">
-        <h1 className="section-title">Cours</h1>
-        
         <div className="mb-8">
           <div className="relative max-w-md">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
@@ -72,12 +78,12 @@ const Cours = () => {
         
         {/* Filtres */}
         <div className="flex flex-wrap gap-2 mb-8">
-          <Button variant="outline" size="sm">Tous</Button>
-          <Button variant="outline" size="sm">Physique</Button>
-          <Button variant="outline" size="sm">Biologie</Button>
-          <Button variant="outline" size="sm">Chimie</Button>
-          <Button variant="outline" size="sm">Mathématiques</Button>
-          <Button variant="outline" size="sm">Informatique</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Tous</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Physique</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Biologie</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Chimie</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Mathématiques</Button>
+          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Informatique</Button>
         </div>
         
         {/* Liste des cours */}
@@ -92,10 +98,10 @@ const Cours = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-white py-8 mt-auto">
+      <footer className="bg-scienceco-red text-white py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-t pt-8">
-            <p className="text-center text-gray-500 text-sm">
+            <p className="text-center text-gray-200 text-sm">
               &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
             </p>
           </div>

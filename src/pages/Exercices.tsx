@@ -70,8 +70,8 @@ const Exercices = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
-      {/* Header avec gradient inspiré de jeton.com */}
-      <div className="gradient-bg text-white py-12">
+      {/* Header avec gradient orange-rouge */}
+      <div className="gradient-orange-red text-white py-12">
         <div className="section-container">
           <h1 className="text-4xl font-bold">Exercices</h1>
           <p className="mt-4 max-w-2xl">Pratiquez et testez vos connaissances avec nos exercices interactifs</p>
@@ -84,7 +84,7 @@ const Exercices = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
             <Input 
               placeholder="Rechercher un exercice..." 
-              className="pl-10 border-gray-300 focus:border-scienceco-blue focus:ring-scienceco-blue/20"
+              className="pl-10 border-gray-300 focus:border-scienceco-orange focus:ring-scienceco-orange/20"
             />
           </div>
           
@@ -94,7 +94,7 @@ const Exercices = () => {
               variant={activeFilter === 'Tous' ? "default" : "outline"}
               size="sm"
               onClick={() => setActiveFilter('Tous')}
-              className={activeFilter === 'Tous' ? 'bg-scienceco-blue' : ''}
+              className={activeFilter === 'Tous' ? 'bg-scienceco-orange' : ''}
             >
               Tous
             </Button>
@@ -137,7 +137,7 @@ const Exercices = () => {
       </div>
       
       {/* Footer avec style inspiré de jeton.com */}
-      <footer className="bg-scienceco-darkblue text-white py-12 mt-auto">
+      <footer className="bg-scienceco-red text-white py-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>

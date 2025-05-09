@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
-      {/* Hero Section avec le nouveau dégradé orange-rouge */}
+      {/* Hero Section avec le dégradé orange-rouge */}
       <section className="gradient-orange-red text-white">
         <div className="section-container py-16 sm:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

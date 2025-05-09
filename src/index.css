@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,6 +76,21 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Font family for the brand logo */
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Neon text effect */
+  .neon-text {
+    text-shadow: 0 0 5px rgba(234,56,76,0.7), 0 0 10px rgba(234,56,76,0.4);
+  }
+  
+  /* Neon box effect */
+  .neon-box {
+    box-shadow: 0 0 5px rgba(234,56,76,0.7), 0 0 10px rgba(234,56,76,0.4);
   }
   
   .section-title {

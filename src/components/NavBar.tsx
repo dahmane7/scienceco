@@ -1,21 +1,34 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   const location = useLocation();
+  const [isHovered, setIsHovered] = useState(false);
   
   const isActive = (path: string) => {
     return location.pathname === path;
   };
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm relative">
+      {/* Neon red effect at the bottom of the nav */}
+      <div className="absolute bottom-0 left-0 w-full h-[2px] bg-scienceco-red shadow-[0_0_5px_1px_rgba(234,56,76,0.7),0_0_10px_rgba(234,56,76,0.4)]"></div>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="text-scienceco-orange text-2xl font-bold">
+              <Link 
+                to="/" 
+                className={`font-serif italic text-3xl font-bold transition-all duration-300 ${
+                  isHovered 
+                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-scienceco-orange to-scienceco-red drop-shadow-[0_0_5px_rgba(234,56,76,0.5)]' 
+                    : 'text-scienceco-orange'
+                }`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
                 Science Co
               </Link>
             </div>

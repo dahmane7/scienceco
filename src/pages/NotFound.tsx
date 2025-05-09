@@ -17,9 +17,9 @@ const NotFound = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
       <div className="text-center max-w-md p-8">
-        <h1 className="text-6xl font-bold mb-4 gradient-text-orange-red">404</h1>
+        <h1 className="text-6xl font-bold mb-4 gradient-text-orange-red font-serif italic">404</h1>
         <p className="text-xl text-gray-600 mb-8">La page que vous recherchez n'existe pas</p>
-        <Button asChild className="bg-scienceco-orange hover:bg-scienceco-red">
+        <Button asChild className="bg-scienceco-orange hover:bg-scienceco-red neon-box">
           <Link to="/">Retour à l'accueil</Link>
         </Button>
       </div>

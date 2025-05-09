@@ -9,54 +9,54 @@ import { Search } from 'lucide-react';
 const Exercices = () => {
   const [activeFilter, setActiveFilter] = useState<string>('Tous');
 
-  // Données factices d'exercices
+  // Données d'exercices sur l'Islam
   const exercises = [
     {
-      title: "Calcul de la force gravitationnelle",
-      description: "Exercice pratique pour calculer la force gravitationnelle entre deux objets.",
-      subject: "Physique",
-      difficulty: "Moyen" as const,
-      estimatedTime: "20 min",
-      pointsAvailable: 15
-    },
-    {
-      title: "Identifier les organelles cellulaires",
-      description: "Exercice d'identification des différentes parties d'une cellule et de leurs fonctions.",
-      subject: "Biologie",
+      title: "Mémorisation des sourates courtes",
+      description: "Exercices pour aider à mémoriser les sourates courtes du Coran avec système de révision.",
+      subject: "Coran",
       difficulty: "Facile" as const,
       estimatedTime: "15 min",
       pointsAvailable: 10
     },
     {
-      title: "Équilibrer les équations chimiques",
-      description: "Série d'équations chimiques à équilibrer pour comprendre la conservation de la masse.",
-      subject: "Chimie",
+      title: "Règles de tajwid",
+      description: "Pratiquez les règles de tajwid pour une récitation correcte du Coran.",
+      subject: "Récitation",
       difficulty: "Moyen" as const,
       estimatedTime: "25 min",
+      pointsAvailable: 15
+    },
+    {
+      title: "Quiz sur la vie du Prophète Mohammed ﷺ",
+      description: "Testez vos connaissances sur les événements importants de la vie du Prophète.",
+      subject: "Histoire",
+      difficulty: "Moyen" as const,
+      estimatedTime: "20 min",
       pointsAvailable: 20
     },
     {
-      title: "Résolution d'équations différentielles",
-      description: "Exercices de résolution d'équations différentielles du premier et second ordre.",
-      subject: "Mathématiques",
-      difficulty: "Difficile" as const,
-      estimatedTime: "40 min",
-      pointsAvailable: 30
+      title: "Vocabulaire arabe religieux",
+      description: "Apprenez les termes arabes essentiels utilisés dans les textes et pratiques islamiques.",
+      subject: "Langue",
+      difficulty: "Facile" as const,
+      estimatedTime: "30 min",
+      pointsAvailable: 15
     },
     {
-      title: "Calcul des distances astronomiques",
-      description: "Exercices pratiques pour calculer les distances entre différents corps célestes.",
-      subject: "Astronomie",
+      title: "Les grandes figures de l'Islam",
+      description: "Exercices sur les compagnons du Prophète et les grandes figures historiques de l'Islam.",
+      subject: "Histoire",
       difficulty: "Moyen" as const,
       estimatedTime: "30 min",
       pointsAvailable: 20
     },
     {
-      title: "Créer un algorithme de tri",
-      description: "Exercice de programmation pour implémenter un algorithme de tri efficace.",
-      subject: "Informatique",
+      title: "Application des règles du fiqh",
+      description: "Étude de cas pratiques pour appliquer les principes de jurisprudence islamique.",
+      subject: "Droit",
       difficulty: "Difficile" as const,
-      estimatedTime: "45 min",
+      estimatedTime: "40 min",
       pointsAvailable: 25
     }
   ];
@@ -70,11 +70,11 @@ const Exercices = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
-      {/* Header avec gradient orange-rouge */}
-      <div className="gradient-orange-red text-white py-12">
+      {/* Header avec nouveau gradient */}
+      <div className="bg-gradient-to-r from-[#304352] to-[#517fa4] text-white py-12">
         <div className="section-container">
           <h1 className="text-4xl font-bold">Exercices</h1>
-          <p className="mt-4 max-w-2xl">Pratiquez et testez vos connaissances avec nos exercices interactifs</p>
+          <p className="mt-4 max-w-2xl">Pratiquez et testez vos connaissances sur l'Islam avec nos exercices interactifs</p>
         </div>
       </div>
       
@@ -84,17 +84,17 @@ const Exercices = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
             <Input 
               placeholder="Rechercher un exercice..." 
-              className="pl-10 border-gray-300 focus:border-scienceco-orange focus:ring-scienceco-orange/20"
+              className="pl-10 border-gray-300 focus:border-[#304352] focus:ring-[#304352]/20"
             />
           </div>
           
-          {/* Filtres avec style inspiré de jeton.com */}
+          {/* Filtres */}
           <div className="flex flex-wrap gap-2 mb-4">
             <Button
               variant={activeFilter === 'Tous' ? "default" : "outline"}
               size="sm"
               onClick={() => setActiveFilter('Tous')}
-              className={activeFilter === 'Tous' ? 'bg-scienceco-orange' : ''}
+              className={activeFilter === 'Tous' ? 'bg-[#304352]' : ''}
             >
               Tous
             </Button>
@@ -136,13 +136,13 @@ const Exercices = () => {
         </div>
       </div>
       
-      {/* Footer avec style inspiré de jeton.com */}
-      <footer className="bg-scienceco-red text-white py-12 mt-auto">
+      {/* Footer */}
+      <footer className="bg-[#304352] text-white py-12 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Science Co</h3>
-              <p className="text-gray-300">Votre plateforme d'apprentissage scientifique en ligne</p>
+              <h3 className="text-xl font-bold mb-4">Nour Al-Ilm</h3>
+              <p className="text-gray-300">Votre plateforme d'apprentissage islamique en ligne</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Liens rapides</h4>
@@ -155,14 +155,17 @@ const Exercices = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-gray-300">info@scienceco.com</p>
+              <p className="text-gray-300">info@nour-al-ilm.com</p>
               <p className="text-gray-300">+33 1 23 45 67 89</p>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8">
-            <p className="text-center text-gray-300 text-sm">
-              &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
-            </p>
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-xl font-serif italic mb-3 font-bold">Savoir & Spiritualité</h3>
+              <p className="text-center text-gray-300 text-sm">
+                &copy; {new Date().getFullYear()} Nour Al-Ilm. Tous droits réservés.
+              </p>
+            </div>
           </div>
         </div>
       </footer>

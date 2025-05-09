@@ -7,49 +7,49 @@ import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 
 const VideoCours = () => {
-  // Données factices de vidéo cours
+  // Données de vidéos sur l'Islam
   const videos = [
     {
-      title: "La relativité expliquée simplement",
-      description: "Une explication visuelle de la théorie de la relativité d'Einstein et ses implications dans notre compréhension de l'univers.",
-      thumbnail: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
-      duration: "45:22",
-      instructor: "Dr. Marie Lambert"
+      title: "L'histoire de la révélation du Coran",
+      description: "Découvrez comment le Coran a été révélé au Prophète Mohammed ﷺ et comment il a été préservé à travers les siècles.",
+      thumbnail: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?auto=format&fit=crop&w=600&q=80",
+      duration: "42:15",
+      instructor: "Imam Ahmed Karimi"
     },
     {
-      title: "L'ADN: Le code de la vie",
-      description: "Découvrez comment fonctionne l'ADN, la molécule qui contient toutes les informations génétiques.",
-      thumbnail: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80",
-      duration: "32:15",
-      instructor: "Prof. Thomas Bernard"
+      title: "Comment faire la prière (Salat)",
+      description: "Guide pas à pas pour apprendre à faire correctement la prière quotidienne, avec démonstration des positions et récitations.",
+      thumbnail: "https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80",
+      duration: "35:48",
+      instructor: "Dr. Fatima Zahra"
     },
     {
-      title: "Les réactions chimiques en action",
-      description: "Visualisez les réactions chimiques les plus spectaculaires et comprenez les processus qui les sous-tendent.",
-      thumbnail: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80",
+      title: "Les règles du jeûne pendant le Ramadan",
+      description: "Explications détaillées des règles du jeûne, ses bienfaits spirituels et conseils pratiques pour le mois sacré.",
+      thumbnail: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?auto=format&fit=crop&w=600&q=80",
       duration: "28:40",
-      instructor: "Dr. Sophie Dubois"
+      instructor: "Sheikh Abdullah Hassan"
     },
     {
-      title: "Le calcul intégral visualisé",
-      description: "Une approche visuelle du calcul intégral qui vous aidera à comprendre intuitivement ce concept mathématique.",
-      thumbnail: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80",
-      duration: "51:08",
-      instructor: "Prof. Michel Lavigne"
+      title: "Introduction à la science du Hadith",
+      description: "Comprendre comment les paroles et actes du Prophète ont été collectés, vérifiés et classifiés par les savants.",
+      thumbnail: "https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80",
+      duration: "50:22",
+      instructor: "Prof. Mohammed Saïd"
     },
     {
-      title: "Voyage au cœur des exoplanètes",
-      description: "Exploration visuelle des planètes situées en dehors de notre système solaire et leur potentiel pour abriter la vie.",
-      thumbnail: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=600&q=80",
+      title: "L'art islamique à travers les siècles",
+      description: "Exploration visuelle des chefs-d'œuvre de l'art islamique, de l'architecture des mosquées à la calligraphie.",
+      thumbnail: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?auto=format&fit=crop&w=600&q=80",
       duration: "38:54",
-      instructor: "Dr. Claire Fontaine"
+      instructor: "Dr. Leila Benali"
     },
     {
-      title: "Les réseaux de neurones expliqués",
-      description: "Comment fonctionnent les réseaux de neurones artificiels, la technologie derrière l'intelligence artificielle moderne.",
-      thumbnail: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80",
-      duration: "42:17",
-      instructor: "Prof. Lucas Martin"
+      title: "Éthique et morale en Islam",
+      description: "Les principes éthiques fondamentaux dans l'Islam et leur application dans la vie quotidienne moderne.",
+      thumbnail: "https://images.unsplash.com/photo-1466442929976-97f336a657be?auto=format&fit=crop&w=600&q=80",
+      duration: "45:17",
+      instructor: "Imam Youssef Abou"
     }
   ];
 
@@ -57,11 +57,11 @@ const VideoCours = () => {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <NavBar />
       
-      {/* Header avec gradient orange-rouge */}
-      <div className="gradient-orange-red text-white py-12">
+      {/* Header avec nouveau gradient */}
+      <div className="bg-gradient-to-r from-[#304352] to-[#517fa4] text-white py-12">
         <div className="section-container">
           <h1 className="text-4xl font-bold">Vidéo Cours</h1>
-          <p className="mt-4 max-w-2xl">Apprenez visuellement avec nos vidéos éducatives</p>
+          <p className="mt-4 max-w-2xl">Apprenez visuellement avec nos vidéos éducatives sur l'Islam</p>
         </div>
       </div>
       
@@ -78,12 +78,13 @@ const VideoCours = () => {
         
         {/* Filtres */}
         <div className="flex flex-wrap gap-2 mb-8">
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Toutes</Button>
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Physique</Button>
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Biologie</Button>
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Chimie</Button>
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Mathématiques</Button>
-          <Button variant="outline" size="sm" className="hover:bg-scienceco-orange/10 hover:text-scienceco-orange">Informatique</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Toutes</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Coran</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Prière</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Histoire</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Hadith</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Art</Button>
+          <Button variant="outline" size="sm" className="hover:bg-[#304352]/10 hover:text-[#304352]">Éthique</Button>
         </div>
         
         {/* Liste des vidéos */}
@@ -98,12 +99,15 @@ const VideoCours = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-scienceco-red text-white py-8 mt-auto">
+      <footer className="bg-[#304352] text-white py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-t pt-8">
-            <p className="text-center text-gray-200 text-sm">
-              &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
-            </p>
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-xl font-serif italic mb-3 font-bold">Savoir & Spiritualité</h3>
+              <p className="text-center text-gray-200 text-sm">
+                &copy; {new Date().getFullYear()} Nour Al-Ilm. Tous droits réservés.
+              </p>
+            </div>
           </div>
         </div>
       </footer>

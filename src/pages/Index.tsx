@@ -100,9 +100,12 @@ const Index = () => {
       <footer className="bg-scienceco-red text-white py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-t border-white/20 pt-8">
-            <p className="text-center text-gray-200 text-sm">
-              &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
-            </p>
+            <div className="flex flex-col items-center justify-center">
+              <h3 className="text-xl font-serif italic mb-3 font-bold">Science & Compréhension</h3>
+              <p className="text-center text-gray-200 text-sm">
+                &copy; {new Date().getFullYear()} Science Co. Tous droits réservés.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
